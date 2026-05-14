@@ -279,3 +279,32 @@ button:hover{
         font-size: 13px;
     }
 }
+
+@media (max-width: 480px){
+
+    fieldset{
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .form-1{
+        width: 100%;
+    }
+
+    .gender-group{
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    input,
+    textarea,
+    select{
+        font-size: 16px;
+    }
+
+    button{
+        width: 100%;
+    }
+}
