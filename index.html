@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Build User Personal Information Form Using HTML and CSS</h1>
+       <!--Form -1-->
+    <form>
+        <fieldset>
+
+            <legend>User Personal Information</legend>
+
+            <label for="name">Enter Your Full Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Enter Your Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="password">Enter Your Password:</label>
+            <input type="password" id="password" name="password">
+
+            <label for="confirm-password">Confirm Your Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+
+            <label>Enter Your Gender:</label>
+
+            <div class="gender-group">
+
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male" class="radio-label">Male</label>
+
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female" class="radio-label">Female</label>
+
+                <input type="radio" name="gender" id="others" value="others">
+                <label for="others" class="radio-label">Others</label>
+
+            </div>
+
+            <label for="dob">Enter Your Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <label for="address">Enter Your Address:</label>
+            <textarea id="address" name="address" rows="3"></textarea>
+
+            <button type="submit">Submit</button>
+
+        </fieldset>
+    </form>
+
+    <h1>Build a Survey Form Using HTML and CSS</h1>
+
+       <!--Form -2-->
+    <form class="survey-container">
+
+        <label for="survey-name">Name</label>
+        <input type="text" id="survey-name" placeholder="Enter your name">
+
+        <label for="survey-email">Email</label>
+        <input type="email" id="survey-email" placeholder="Enter your email">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter your age">
+
+        <label for="role">Which option best describes you?</label>
+
+        <select id="role">
+            <option disabled selected>Select an option</option>
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label>Would you recommend GeeksforGeeks to a friend?</label>
+
+        <div class="options">
+
+            <input type="radio" name="recommend" id="yes">
+            <label for="yes" class="inline">Yes</label><br>
+
+            <input type="radio" name="recommend" id="no">
+            <label for="no" class="inline">No</label><br>
+
+            <input type="radio" name="recommend" id="maybe">
+            <label for="maybe" class="inline">Maybe</label>
+
+        </div>
+
+        <label>
+            Languages and Frameworks Known (Check all that apply)
+        </label>
+
+        <div class="options">
+
+            <input type="checkbox" id="c">
+            <label for="c" class="inline">C</label><br>
+
+            <input type="checkbox" id="cpp">
+            <label for="cpp" class="inline">C++</label><br>
+
+            <input type="checkbox" id="java">
+            <label for="java" class="inline">Java</label><br>
+
+            <input type="checkbox" id="python">
+            <label for="python" class="inline">Python</label>
+
+        </div>
+
+        <label for="comments">Any comments or suggestions</label>
+
+        <textarea id="comments" placeholder="Enter your comment here"></textarea>
+
+        <button class="btn-2" type="submit">Submit</button>
+
+    </form>
+    <h1>Write the Code of Column and Row Span of a Table Shown Below</h1>
+     <!--Table -1-->
+    <table class="table-two">
+        <tr>
+            <td class="green-box">Cell [1,1]</td>
+            <td class="green-box" colspan="2">Cell [2,1]</td>
+        </tr>
+        <tr>
+            <td class="yellow-box">Cell [1,2]</td>
+            <td class="yellow-box" rowspan="2">Cell [2,2]</td>
+            <td class="yellow-box">Cell [3,2]</td>
+        </tr>
+        <tr>
+            <td class="red-box">Cell [1,3]</td>
+            <td class="red-box">Cell [3,3]</td>
+        </tr>
+    </table>
+            <!--Table-2-->
+    <h1 class="h1-1">EIPC</h1>
+    <h3 class="h3-1">Table with Rowspan and Colspan</h3>
+
+    <table class="table-one">
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Level</th>
+            <th>Department</th>
+        </tr>
+        <tr class="white-row">
+            <td rowspan="2">Alice</td>
+            <td rowspan="2">Brown</td>
+            <td>4</td>
+            <td rowspan="2">Manufacturer</td>
+        </tr>
+        <tr class="yellow-row">
+            <td>A</td>
+        </tr>
+        <tr class="yellow-row">
+            <td rowspan="2">John</td>
+            <td rowspan="2">Doe</td>
+            <td>3</td>
+            <td rowspan="2">ICT</td>
+        </tr>
+        <tr class="yellow-row">
+            <td>B</td>
+        </tr>
+        <tr class="red-row">
+            <td rowspan="2">Jane</td>
+            <td rowspan="2">Smith</td>
+            <td>2</td>
+            <td rowspan="2">Electrical</td>
+        </tr>
+        <tr>
+            <td class="blue-cell">D</td>
+        </tr>
+    </table>
+</body>
+</html>
